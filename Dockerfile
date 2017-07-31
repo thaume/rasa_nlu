@@ -1,34 +1,14 @@
-FROM python:2.7-slim
+FROM rasa/rasa_nlu:latest
 
-ENV RASA_NLU_DOCKER="YES" \
-    RASA_NLU_HOME=/app \
-    RASA_NLU_PYTHON_PACKAGES=/usr/local/lib/python2.7/dist-packages
+RUN apt-get update -qq && apt-get install -y --no-install-recommends wget \
+    && apt-get -y install default-jre \
+    && wget -P data/ https://s3-eu-west-1.amazonaws.com/mitie/total_word_feature_extractor.dat \
+    && apt-get remove -y wget
 
-VOLUME ["${RASA_NLU_HOME}", "${RASA_NLU_PYTHON_PACKAGES}"]
+COPY dev-requirements.txt .
+RUN pip install -r dev-requirements.txt
 
-# Run updates, install basics and cleanup
-# - build-essential: Compile specific dependencies
-# - git-core: Checkout git repos
-RUN apt-get update -qq && apt-get install -y --no-install-recommends \
-  build-essential \
-  git-core && \
-  apt-get clean && \
-  rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
-
-WORKDIR ${RASA_NLU_HOME}
-
-COPY ./requirements.txt requirements.txt
-
-# Split into pre-requirements, so as to allow for Docker build caching
-RUN pip install $(tail -n +2 requirements.txt)
-
-COPY . ${RASA_NLU_HOME}
-
-RUN python setup.py install
-
-RUN ls /app
-
-EXPOSE 5000
-
-ENTRYPOINT ["./entrypoint.sh"]
-CMD ["help"]
+RUN pip install https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-1.2.0/en_core_web_sm-1.2.0.tar.gz --no-cache-dir > /dev/null \
+    && python -m spacy link en_core_web_sm en \
+    && pip install https://github.com/explosion/spacy-models/releases/download/de_core_news_md-1.0.0/de_core_news_md-1.0.0.tar.gz --no-cache-dir > /dev/null \
+    && python -m spacy link de_core_news_md de

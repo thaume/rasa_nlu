@@ -1,0 +1,1346 @@
+{
+  "rasa_nlu_data": {
+    "regex_features": [],
+    "entity_synonyms": [],
+    "common_examples": [{
+      "text": "what is RTB?",
+      "intent": "answer_37",
+      "entities": []
+    },
+    {
+      "text": "How do I begin using precision advertising campaigns?",
+      "intent": "answer_13",
+      "entities": []
+    },
+    {
+      "text": "Is there a guide to activating campaigns on precision advertising?",
+      "intent": "answer_13",
+      "entities": []
+    },
+    {
+      "text": "When can I begin precision ad campaigns?",
+      "intent": "answer_13",
+      "entities": []
+    },
+    {
+      "text": "Are precision ad campaigns ready to go?",
+      "intent": "answer_13",
+      "entities": []
+    },
+    {
+      "text": "Is there a local benchmark for precision advertising?",
+      "intent": "answer_12",
+      "entities": []
+    },
+    {
+      "text": "How do I know I'm using precision advertising enough for my country?",
+      "intent": "answer_12",
+      "entities": []
+    },
+    {
+      "text": "Do different countries have different rates for precision advertising?",
+      "intent": "answer_12",
+      "entities": []
+    },
+    {
+      "text": "Can I find a good rate for precision ads in my country?",
+      "intent": "answer_12",
+      "entities": []
+    },
+    {
+      "text": "Where can I find out the number of cookies used?",
+      "intent": "answer_11",
+      "entities": []
+    },
+    {
+      "text": "Can I count the number of cookies I have?",
+      "intent": "answer_11",
+      "entities": []
+    },
+    {
+      "text": "Is there a way to get the total number of cookies?",
+      "intent": "answer_11",
+      "entities": []
+    },
+    {
+      "text": "Where is there a report on the number of cookies?",
+      "intent": "answer_11",
+      "entities": []
+    },
+    {
+      "text": "How long do cookies last?",
+      "intent": "answer_10",
+      "entities": []
+    },
+    {
+      "text": "Do cookies need to be changed?",
+      "intent": "answer_10",
+      "entities": []
+    },
+    {
+      "text": "When do cookies stop working?",
+      "intent": "answer_10",
+      "entities": []
+    },
+    {
+      "text": "Are cookies able to last forever?",
+      "intent": "answer_10",
+      "entities": []
+    },
+    {
+      "text": "What are the main metrics for precision advertising?",
+      "intent": "answer_17",
+      "entities": []
+    },
+    {
+      "text": "How does precision advertising measure success?",
+      "intent": "answer_17",
+      "entities": []
+    },
+    {
+      "text": "What do I use to track precision advertising results?",
+      "intent": "answer_17",
+      "entities": []
+    },
+    {
+      "text": "Is there an official measurement or KPI for precision ads?",
+      "intent": "answer_17",
+      "entities": []
+    },
+    {
+      "text": "How do I need how my campaign is working across devices?",
+      "intent": "answer_16",
+      "entities": []
+    },
+    {
+      "text": "Can I get an indicator of campaign success for multiple devices?",
+      "intent": "answer_16",
+      "entities": []
+    },
+    {
+      "text": "How do I measure campaigns across several devices?",
+      "intent": "answer_16",
+      "entities": []
+    },
+    {
+      "text": "Is there a cross device view of my campaign I can access?",
+      "intent": "answer_16",
+      "entities": []
+    },
+    {
+      "text": "Is it possible to target campaigns by skin problems?",
+      "intent": "answer_15",
+      "entities": []
+    },
+    {
+      "text": "Can I segment audiences by skin condition or issue?",
+      "intent": "answer_15",
+      "entities": []
+    },
+    {
+      "text": "How would I target particular skin concerns?",
+      "intent": "answer_15",
+      "entities": []
+    },
+    {
+      "text": "Are skin problems a way to filter?",
+      "intent": "answer_15",
+      "entities": []
+    },
+    {
+      "text": "Is there a way to target people by hair type?",
+      "intent": "answer_14",
+      "entities": []
+    },
+    {
+      "text": "Can I filter audiences by red, brown, blonde or other hair?",
+      "intent": "answer_14",
+      "entities": []
+    },
+    {
+      "text": "Can I be as precise in campaigns as targeting hair?",
+      "intent": "answer_14",
+      "entities": []
+    },
+    {
+      "text": "Is it possible to segment by hair type, style or texture?",
+      "intent": "answer_14",
+      "entities": []
+    },
+    {
+      "text": "How does real time bidding work?",
+      "intent": "answer_19",
+      "entities": []
+    },
+    {
+      "text": "Is there a way to bid in real time?",
+      "intent": "answer_19",
+      "entities": []
+    },
+    {
+      "text": "Can you explain what real time bidding is?",
+      "intent": "answer_19",
+      "entities": []
+    },
+    {
+      "text": "What does real time bidding mean?",
+      "intent": "answer_19",
+      "entities": []
+    },
+    {
+      "text": "What does ABC, 123 mean?",
+      "intent": "answer_18",
+      "entities": []
+    },
+    {
+      "text": "Can you explain ABC, 123 to me?",
+      "intent": "answer_18",
+      "entities": []
+    },
+    {
+      "text": "Is there a meaning to ABC, 123?",
+      "intent": "answer_18",
+      "entities": []
+    },
+    {
+      "text": "Does ABC, 123 mean anything?",
+      "intent": "answer_18",
+      "entities": []
+    },
+    {
+      "text": "What are the precision advertising's best practices?",
+      "intent": "answer_31",
+      "entities": []
+    },
+    {
+      "text": "Are there a set of rules to follow with precision advertising?",
+      "intent": "answer_31",
+      "entities": []
+    },
+    {
+      "text": "Can I get guidance on the best way to use precision advertising?",
+      "intent": "answer_31",
+      "entities": []
+    },
+    {
+      "text": "What are the main things to know about precision advertising?",
+      "intent": "answer_31",
+      "entities": []
+    },
+    {
+      "text": "How do I get started with precision advertising?",
+      "intent": "answer_30",
+      "entities": []
+    },
+    {
+      "text": "How can I get going with precision advertising?",
+      "intent": "answer_30",
+      "entities": []
+    },
+    {
+      "text": "Can I begin using precision advertising?",
+      "intent": "answer_30",
+      "entities": []
+    },
+    {
+      "text": "How do I get charged for Double Click and Google Analytics premium?",
+      "intent": "answer_33",
+      "entities": []
+    },
+    {
+      "text": "Can you explain how invoices work for Double Click and GA premium accounts?",
+      "intent": "answer_33",
+      "entities": []
+    },
+    {
+      "text": "What is the billing system for premium Google Analytics and Double Click?",
+      "intent": "answer_33",
+      "entities": []
+    },
+    {
+      "text": "Can someone open a Double Click account for me?",
+      "intent": "answer_32",
+      "entities": []
+    },
+    {
+      "text": "How do I get started with Double Click?",
+      "intent": "answer_32",
+      "entities": []
+    },
+    {
+      "text": "Is there a way to get going with Double Click?",
+      "intent": "answer_32",
+      "entities": []
+    },
+    {
+      "text": "What do I need to do to start using Double Click?",
+      "intent": "answer_32",
+      "entities": []
+    },
+    {
+      "text": "Show me what cookies are.",
+      "intent": "answer_7",
+      "entities": []
+    },
+    {
+      "text": "What do cookies do?",
+      "intent": "answer_7",
+      "entities": []
+    },
+    {
+      "text": "How does a cookie work?",
+      "intent": "answer_7",
+      "entities": []
+    },
+    {
+      "text": "Where can I find a cookie?",
+      "intent": "answer_7",
+      "entities": []
+    },
+    {
+      "text": "What is tagging?",
+      "intent": "answer_6",
+      "entities": []
+    },
+    {
+      "text": "How do tags work?",
+      "intent": "answer_6",
+      "entities": []
+    },
+    {
+      "text": "What are tags for?",
+      "intent": "answer_6",
+      "entities": []
+    },
+    {
+      "text": "Explain tagging to me.",
+      "intent": "answer_6",
+      "entities": []
+    },
+    {
+      "text": "Show me what tags are.",
+      "intent": "answer_6",
+      "entities": []
+    },
+    {
+      "text": "Do we have a DMP?",
+      "intent": "answer_5",
+      "entities": []
+    },
+    {
+      "text": "What DMP do we use?",
+      "intent": "answer_5",
+      "entities": []
+    },
+    {
+      "text": "Do we have a platform to manage data?",
+      "intent": "answer_5",
+      "entities": []
+    },
+    {
+      "text": "How do we aggregate data from our various sources?",
+      "intent": "answer_5",
+      "entities": []
+    },
+    {
+      "text": "Where is data from digital campaigns stored?",
+      "intent": "answer_5",
+      "entities": []
+    },
+    {
+      "text": "What is DoubleClick Bid Manager?",
+      "intent": "answer_4",
+      "entities": []
+    },
+    {
+      "text": "What is DBM?",
+      "intent": "answer_4",
+      "entities": []
+    },
+    {
+      "text": "What programmatic bidding tools do we use?",
+      "intent": "answer_4",
+      "entities": []
+    },
+    {
+      "text": "What is a data management platform?",
+      "intent": "answer_3",
+      "entities": []
+    },
+    {
+      "text": "What does DMP mean?",
+      "intent": "answer_3",
+      "entities": []
+    },
+    {
+      "text": "How would you compare precision advertising and programmatic ?",
+      "intent": "answer_2",
+      "entities": []
+    },
+    {
+      "text": "Is there a difference between precision advertising and programmatic ?",
+      "intent": "answer_2",
+      "entities": []
+    },
+    {
+      "text": "Are precision advertising and programmatic different ?",
+      "intent": "answer_2",
+      "entities": []
+    },
+    {
+      "text": "Can I use both programmatic and precision advertising ?",
+      "intent": "answer_2",
+      "entities": []
+    },
+    {
+      "text": "What is precision ad?",
+      "intent": "answer_1",
+      "entities": []
+    },
+    {
+      "text": "Can you explain precison advertising to me ?",
+      "intent": "answer_1",
+      "entities": []
+    },
+    {
+      "text": "Do you have information regarding precision advertising ?",
+      "intent": "answer_1",
+      "entities": []
+    },
+    {
+      "text": "Define precision advertising",
+      "intent": "answer_1",
+      "entities": []
+    },
+    {
+      "text": "Can I get data from other websites' cookies?",
+      "intent": "answer_9",
+      "entities": []
+    },
+    {
+      "text": "Is it possible to get data on competitors through their cookies?",
+      "intent": "answer_9",
+      "entities": []
+    },
+    {
+      "text": "Can I track users on competitors' websites?",
+      "intent": "answer_9",
+      "entities": []
+    },
+    {
+      "text": "Is data collection from competitor websites possible?",
+      "intent": "answer_9",
+      "entities": []
+    },
+    {
+      "text": "Why do we use Double Click?",
+      "intent": "answer_8",
+      "entities": []
+    },
+    {
+      "text": "What does Double Click do?",
+      "intent": "answer_8",
+      "entities": []
+    },
+    {
+      "text": "Do I need to use Double Click?",
+      "intent": "answer_8",
+      "entities": []
+    },
+    {
+      "text": "What tool do we use for campaigns?",
+      "intent": "answer_8",
+      "entities": []
+    },
+    {
+      "text": "How do I activate data for campaigns?",
+      "intent": "answer_8",
+      "entities": []
+    },
+    {
+      "text": "Where do I go to buy ads?",
+      "intent": "answer_8",
+      "entities": []
+    },
+    {
+      "text": "Do ad blockers effect my ROI and advertising costs?",
+      "intent": "answer_28",
+      "entities": []
+    },
+    {
+      "text": "Is there an expense when an ad is blocked by an ad blocker?",
+      "intent": "answer_28",
+      "entities": []
+    },
+    {
+      "text": "Can I avoid being charged on the ad platform for blocked ads?",
+      "intent": "answer_28",
+      "entities": []
+    },
+    {
+      "text": "Is there a way to avoid ad platform fees when ads are blocked?",
+      "intent": "answer_28",
+      "entities": []
+    },
+    {
+      "text": "Are specific formats like homepage take over, expendables and rich media available on precision advertising?",
+      "intent": "answer_29",
+      "entities": []
+    },
+    {
+      "text": "Does precision advertising allow buying particular formats like take over, expendables, rich media, etc.?",
+      "intent": "answer_29",
+      "entities": []
+    },
+    {
+      "text": "How do I purchase homepage take overs, expendables and rich media?",
+      "intent": "answer_29",
+      "entities": []
+    },
+    {
+      "text": "Where can I buy precise formats like rich media, homepage take overs and expendables?",
+      "intent": "answer_29",
+      "entities": []
+    },
+    {
+      "text": "Is it possible to understand consumer behavior across Google, Facebook and YouTube?",
+      "intent": "answer_26",
+      "entities": []
+    },
+    {
+      "text": "How do I link behavior across the Facebook, YouTube or Google?",
+      "intent": "answer_26",
+      "entities": []
+    },
+    {
+      "text": "Is there a way to track consumers or users across different ad networks?",
+      "intent": "answer_26",
+      "entities": []
+    },
+    {
+      "text": "Explain how tracking consumers across social, video and search works.",
+      "intent": "answer_26",
+      "entities": []
+    },
+    {
+      "text": "Is there a maximum display frequency for traditional digital advertising?",
+      "intent": "answer_24",
+      "entities": []
+    },
+    {
+      "text": "Do digital ads have a display frequency cap or limit?",
+      "intent": "answer_24",
+      "entities": []
+    },
+    {
+      "text": "Is there a cap on traditional digital advertizing frequency?",
+      "intent": "answer_24",
+      "entities": []
+    },
+    {
+      "text": "Should I set a limit on the frequency of digital advertizing?",
+      "intent": "answer_24",
+      "entities": []
+    },
+    {
+      "text": "Is there a way to limit display frequency on YouTube or Facebook?",
+      "intent": "answer_25",
+      "entities": []
+    },
+    {
+      "text": "How do I cap frequency across Facebook and YouTube?",
+      "intent": "answer_25",
+      "entities": []
+    },
+    {
+      "text": "Is there an optimal display frequency for Facebook and YouTube?",
+      "intent": "answer_25",
+      "entities": []
+    },
+    {
+      "text": "How do I control the frequency of ads on Facebook and YouTube?",
+      "intent": "answer_25",
+      "entities": []
+    },
+    {
+      "text": "Is there a way to track viewability?",
+      "intent": "answer_22",
+      "entities": []
+    },
+    {
+      "text": "Where do I find the viewability indicator or metric?",
+      "intent": "answer_22",
+      "entities": []
+    },
+    {
+      "text": "Can I track or follow viewability rates?",
+      "intent": "answer_22",
+      "entities": []
+    },
+    {
+      "text": "Show me where I can find viewability.",
+      "intent": "answer_22",
+      "entities": []
+    },
+    {
+      "text": "Should my ad be shown a limited number of times to a consumer or user?",
+      "intent": "answer_23",
+      "entities": []
+    },
+    {
+      "text": "Is there a maximum number of times a consumer should see an ad?",
+      "intent": "answer_23",
+      "entities": []
+    },
+    {
+      "text": "Is there a limit to the number of times someone should view an ad?",
+      "intent": "answer_23",
+      "entities": []
+    },
+    {
+      "text": "Is there an optimal number of times a consumer should view my ad?",
+      "intent": "answer_23",
+      "entities": []
+    },
+    {
+      "text": "How can I reduce audience fraud in my campaigns?",
+      "intent": "answer_20",
+      "entities": []
+    },
+    {
+      "text": "Is there a way to filter out fake consumers or users in my audience?",
+      "intent": "answer_20",
+      "entities": []
+    },
+    {
+      "text": "Can I make sure my campaign is only shown to real people?",
+      "intent": "answer_20",
+      "entities": []
+    },
+    {
+      "text": "How do I avoid spending money on fake views?",
+      "intent": "answer_20",
+      "entities": []
+    },
+    {
+      "text": "What percentage of viewability is necessary?",
+      "intent": "answer_21",
+      "entities": []
+    },
+    {
+      "text": "Should we target a rate of 100% viewability?",
+      "intent": "answer_21",
+      "entities": []
+    },
+    {
+      "text": "Is there a target level for viewability?",
+      "intent": "answer_21",
+      "entities": []
+    },
+    {
+      "text": "Should I ensure 100% viewability for campaigns?",
+      "intent": "answer_21",
+      "entities": []
+    },
+    {
+      "text": "where do you come from?",
+      "intent": "answer_46",
+      "entities": []
+    },
+    {
+      "text": "where do you live?",
+      "intent": "answer_46",
+      "entities": []
+    },
+    {
+      "text": "where are you living?",
+      "intent": "answer_46",
+      "entities": []
+    },
+    {
+      "text": "tell me how to do tagging",
+      "intent": "answer_45",
+      "entities": []
+    },
+    {
+      "text": "how am I supposed to do tagging?",
+      "intent": "answer_45",
+      "entities": []
+    },
+    {
+      "text": "show me how to do tagging",
+      "intent": "answer_45",
+      "entities": []
+    },
+    {
+      "text": "how can I use tagging?",
+      "intent": "answer_45",
+      "entities": []
+    },
+    {
+      "text": "show me our google Ad products",
+      "intent": "answer_44",
+      "entities": []
+    },
+    {
+      "text": "do you have a list of the google Ad products we use?",
+      "intent": "answer_44",
+      "entities": []
+    },
+    {
+      "text": "what are the google ad products used by L'Oreal?",
+      "intent": "answer_44",
+      "entities": []
+    },
+    {
+      "text": "what is L'Oreal currently using regarding google Ad products?",
+      "intent": "answer_44",
+      "entities": []
+    },
+    {
+      "text": "what Google Ad products do we have activated?",
+      "intent": "answer_44",
+      "entities": []
+    },
+    {
+      "text": "Can you explain to me what is doubleclick?",
+      "intent": "answer_43",
+      "entities": []
+    },
+    {
+      "text": "What is happening today?",
+      "intent": "answer_42",
+      "entities": []
+    },
+    {
+      "text": "How is the day looking like?",
+      "intent": "answer_42",
+      "entities": []
+    },
+    {
+      "text": "Do you have news for today ?",
+      "intent": "answer_42",
+      "entities": []
+    },
+    {
+      "text": "Tell me about today's news",
+      "intent": "answer_42",
+      "entities": []
+    },
+    {
+      "text": "Can you tell me about GAP?",
+      "intent": "answer_41",
+      "entities": []
+    },
+    {
+      "text": "Do we use GAP?",
+      "intent": "answer_41",
+      "entities": []
+    },
+    {
+      "text": "I want to know more about GAP",
+      "intent": "answer_41",
+      "entities": []
+    },
+    {
+      "text": "Is it possible for you to eat this cookie ?",
+      "intent": "answer_40",
+      "entities": []
+    },
+    {
+      "text": "Eat this cookie now !",
+      "intent": "answer_40",
+      "entities": []
+    },
+    {
+      "text": "Can you tell me more about facebook ads ?",
+      "intent": "answer_39",
+      "entities": []
+    },
+    {
+      "text": "Explain facebook ads to me",
+      "intent": "answer_39",
+      "entities": []
+    },
+    {
+      "text": "What are facebook ads?",
+      "intent": "answer_39",
+      "entities": []
+    },
+    {
+      "text": "Who should I talk to regarding precision ad in Spain?",
+      "intent": "answer_38",
+      "entities": []
+    },
+    {
+      "text": "Who is the contact in Spain for precision ad ?",
+      "intent": "answer_38",
+      "entities": []
+    },
+    {
+      "text": "Can you give me the contact of the precision ad expert in Spain ?",
+      "intent": "answer_38",
+      "entities": []
+    },
+    {
+      "text": "can you tell me what is audience center?",
+      "intent": "answer_36",
+      "entities": []
+    },
+    {
+      "text": "what are the tagging rules?",
+      "intent": "answer_35",
+      "entities": []
+    },
+    {
+      "text": "What are the golden rules of tagging?",
+      "intent": "answer_35",
+      "entities": []
+    },
+    {
+      "text": "what are the golden rules?",
+      "intent": "answer_35",
+      "entities": []
+    },
+    {
+      "text": "do we have golden rules for tagging?",
+      "intent": "answer_35",
+      "entities": []
+    },
+    {
+      "text": "How do I start precision advertising?",
+      "intent": "answer_13",
+      "entities": []
+    },
+    {
+      "text": "Can I start a precision advertising campaign?",
+      "intent": "answer_13",
+      "entities": []
+    },
+    {
+      "text": "How can I get started with precision advertising?",
+      "intent": "answer_13",
+      "entities": []
+    },
+    {
+      "text": "What are good precision advertising rates for my region?",
+      "intent": "answer_12",
+      "entities": []
+    },
+    {
+      "text": "How much precision advertising do I need for my country?",
+      "intent": "answer_12",
+      "entities": []
+    },
+    {
+      "text": "How can I tell how many cookies I have?",
+      "intent": "answer_11",
+      "entities": []
+    },
+    {
+      "text": "What do I use to keep track of my cookies?",
+      "intent": "answer_11",
+      "entities": []
+    },
+    {
+      "text": "How long does a cookie last?",
+      "intent": "answer_10",
+      "entities": []
+    },
+    {
+      "text": "Will cookies stay alive forever?",
+      "intent": "answer_10",
+      "entities": []
+    },
+    {
+      "text": "Can a cookie ever disappear?",
+      "intent": "answer_10",
+      "entities": []
+    },
+    {
+      "text": "Can you explain how we measure performance of our advertising?",
+      "intent": "answer_17",
+      "entities": []
+    },
+    {
+      "text": "How can I see my campaign results on my iphone?",
+      "intent": "answer_16",
+      "entities": []
+    },
+    {
+      "text": "How can I measure my campaign across different devices?",
+      "intent": "answer_16",
+      "entities": []
+    },
+    {
+      "text": "I want to track my campaign on all my devices, how do I do that?",
+      "intent": "answer_16",
+      "entities": []
+    },
+    {
+      "text": "I want to advertise to brown skinned individuals, is that possible?",
+      "intent": "answer_15",
+      "entities": []
+    },
+    {
+      "text": "How can I target specific skin conditions?",
+      "intent": "answer_15",
+      "entities": []
+    },
+    {
+      "text": "How can I target a specific hair color or style?",
+      "intent": "answer_14",
+      "entities": []
+    },
+    {
+      "text": "Can I advertise to specific hair types e.g. blond, brunette, etc.?",
+      "intent": "answer_14",
+      "entities": []
+    },
+    {
+      "text": "I want to advertise to curly haired brunettes, is that possible?",
+      "intent": "answer_14",
+      "entities": []
+    },
+    {
+      "text": "I want to target specific customers by hair type, how do I do that?",
+      "intent": "answer_14",
+      "entities": []
+    },
+    {
+      "text": "Can I market to specific hair colors or types?",
+      "intent": "answer_14",
+      "entities": []
+    },
+    {
+      "text": "Tell me about real-time bidding.",
+      "intent": "answer_19",
+      "entities": []
+    },
+    {
+      "text": "Explain bidding to me",
+      "intent": "answer_19",
+      "entities": []
+    },
+    {
+      "text": "How does real-time bidding work?",
+      "intent": "answer_19",
+      "entities": []
+    },
+    {
+      "text": "Tell me about ABC 123",
+      "intent": "answer_18",
+      "entities": []
+    },
+    {
+      "text": "What are precision advertising best practices?",
+      "intent": "answer_31",
+      "entities": []
+    },
+    {
+      "text": "Tell me about advertising best practices",
+      "intent": "answer_31",
+      "entities": []
+    },
+    {
+      "text": "Show me the first steps to start using precision advertsiing.",
+      "intent": "answer_30",
+      "entities": []
+    },
+    {
+      "text": "What should I do first with precision advertising?",
+      "intent": "answer_30",
+      "entities": []
+    },
+    {
+      "text": "Do I get billed for premium Google Analytics and Double Click?",
+      "intent": "answer_33",
+      "entities": []
+    },
+    {
+      "text": "How do I access DoubleClick?",
+      "intent": "answer_32",
+      "entities": []
+    },
+    {
+      "text": "Can you explain cookies to me?",
+      "intent": "answer_7",
+      "entities": []
+    },
+    {
+      "text": "What's the point of a cookie?",
+      "intent": "answer_7",
+      "entities": []
+    },
+    {
+      "text": "Why are cookies important?",
+      "intent": "answer_7",
+      "entities": []
+    },
+    {
+      "text": "What can you tell me about tags?",
+      "intent": "answer_6",
+      "entities": []
+    },
+    {
+      "text": "Tell me about tags.",
+      "intent": "answer_6",
+      "entities": []
+    },
+    {
+      "text": "Why are tags important?",
+      "intent": "answer_6",
+      "entities": []
+    },
+    {
+      "text": "Can you tell me about tags?",
+      "intent": "answer_6",
+      "entities": []
+    },
+    {
+      "text": "Can we get a DMP?",
+      "intent": "answer_5",
+      "entities": []
+    },
+    {
+      "text": "How do we manager our data?",
+      "intent": "answer_5",
+      "entities": []
+    },
+    {
+      "text": "What does DSP mean?",
+      "intent": "answer_4",
+      "entities": []
+    },
+    {
+      "text": "Explain DSP to me",
+      "intent": "answer_4",
+      "entities": []
+    },
+    {
+      "text": "What can you tell me about DPM?",
+      "intent": "answer_3",
+      "entities": []
+    },
+    {
+      "text": "Can you explain DPM to me?",
+      "intent": "answer_3",
+      "entities": []
+    },
+    {
+      "text": "Tell me about DPM please",
+      "intent": "answer_3",
+      "entities": []
+    },
+    {
+      "text": "What is precission advertising?",
+      "intent": "answer_1",
+      "entities": []
+    },
+    {
+      "text": "Can I see who's visiting competitor websites?",
+      "intent": "answer_9",
+      "entities": []
+    },
+    {
+      "text": "Can I see competitors' cookies?",
+      "intent": "answer_9",
+      "entities": []
+    },
+    {
+      "text": "How do we see peoples ad clicks?",
+      "intent": "answer_8",
+      "entities": []
+    },
+    {
+      "text": "What tools do we use to collect and analyze ad clicks?",
+      "intent": "answer_8",
+      "entities": []
+    },
+    {
+      "text": "How does adblock affect advertising rates?",
+      "intent": "answer_28",
+      "entities": []
+    },
+    {
+      "text": "How do I track consumers on YouTube and Google?",
+      "intent": "answer_26",
+      "entities": []
+    },
+    {
+      "text": "Tell me about frequency caps on regular digital advertising.",
+      "intent": "answer_24",
+      "entities": []
+    },
+    {
+      "text": "Can you tell me about frequency caps on Facebook and YouTube?",
+      "intent": "answer_25",
+      "entities": []
+    },
+    {
+      "text": "Can I measure viewability?",
+      "intent": "answer_22",
+      "entities": []
+    },
+    {
+      "text": "How is viewability measured?",
+      "intent": "answer_22",
+      "entities": []
+    },
+    {
+      "text": "How often should customers see my ad?",
+      "intent": "answer_23",
+      "entities": []
+    },
+    {
+      "text": "How do I avoid fake consumers?",
+      "intent": "answer_20",
+      "entities": []
+    },
+    {
+      "text": "How can I avoid impressions with people who aren't real?",
+      "intent": "answer_20",
+      "entities": []
+    },
+    {
+      "text": "What do I have to do to screen fake users?",
+      "intent": "answer_20",
+      "entities": []
+    },
+    {
+      "text": "Can we get to 100% viewability?",
+      "intent": "answer_21",
+      "entities": []
+    },
+    {
+      "text": "Should we try to get total viewability?",
+      "intent": "answer_21",
+      "entities": []
+    },
+    {
+      "text": "What's a good target for viewability?",
+      "intent": "answer_21",
+      "entities": []
+    },
+    {
+      "text": "where are you from?",
+      "intent": "answer_46",
+      "entities": []
+    },
+    {
+      "text": "how can I do tagging??",
+      "intent": "answer_45",
+      "entities": []
+    },
+    {
+      "text": "what Google Ad products do we have?",
+      "intent": "answer_44",
+      "entities": []
+    },
+    {
+      "text": "What is doubleclick?",
+      "intent": "answer_43",
+      "entities": []
+    },
+    {
+      "text": "What are the latest news?",
+      "intent": "answer_42",
+      "entities": []
+    },
+    {
+      "text": "What is GAP?",
+      "intent": "answer_41",
+      "entities": []
+    },
+    {
+      "text": "Can you eat this cookie?",
+      "intent": "answer_40",
+      "entities": []
+    },
+    {
+      "text": "I want to know more about facebook ads",
+      "intent": "answer_39",
+      "entities": []
+    },
+    {
+      "text": "Who is the precision ad expert in Spain?",
+      "intent": "answer_38",
+      "entities": []
+    },
+    {
+      "text": "what is audience center",
+      "intent": "answer_36",
+      "entities": []
+    },
+    {
+      "text": "Are there golden rules for tagging ?",
+      "intent": "answer_35",
+      "entities": []
+    },
+    {
+      "text": "what is enhanced ecommerce in google analytics?",
+      "intent": "answer_34",
+      "entities": []
+    },
+    {
+      "text": "How can I activate my precision advertising campaign?",
+      "intent": "answer_13",
+      "entities": []
+    },
+    {
+      "text": "What is a healthy rate of precision advertising for my country?",
+      "intent": "answer_12",
+      "entities": []
+    },
+    {
+      "text": "How do I know how many cookies I have?",
+      "intent": "answer_11",
+      "entities": []
+    },
+    {
+      "text": "What is the lifetime of a cookie?",
+      "intent": "answer_10",
+      "entities": []
+    },
+    {
+      "text": "What are the right KPIs for precision advertising?",
+      "intent": "answer_17",
+      "entities": []
+    },
+    {
+      "text": "How can I get a cross device vision of my campaign?",
+      "intent": "answer_16",
+      "entities": []
+    },
+    {
+      "text": "How can I target specific skin concerns?",
+      "intent": "answer_15",
+      "entities": []
+    },
+    {
+      "text": "How can I target blond, brunette, curly hair?",
+      "intent": "answer_14",
+      "entities": []
+    },
+    {
+      "text": "What is real time bidding?",
+      "intent": "answer_19",
+      "entities": []
+    },
+    {
+      "text": "What is ABC, 123?",
+      "intent": "answer_18",
+      "entities": []
+    },
+    {
+      "text": "What are the precision advertising golden rules?",
+      "intent": "answer_31",
+      "entities": []
+    },
+    {
+      "text": "What are the first steps of precision advertising?",
+      "intent": "answer_30",
+      "entities": []
+    },
+    {
+      "text": "How does Double Click, Google analytics premium get invoiced to me?",
+      "intent": "answer_33",
+      "entities": []
+    },
+    {
+      "text": "How can I get access to Double Click?",
+      "intent": "answer_32",
+      "entities": []
+    },
+    {
+      "text": "What is a cookie?",
+      "intent": "answer_7",
+      "entities": []
+    },
+    {
+      "text": "What is a tag?",
+      "intent": "answer_6",
+      "entities": []
+    },
+    {
+      "text": "Why don’t we have a DMP?",
+      "intent": "answer_5",
+      "entities": []
+    },
+    {
+      "text": "What is DSP?",
+      "intent": "answer_4",
+      "entities": []
+    },
+    {
+      "text": "What is a DMP?",
+      "intent": "answer_3",
+      "entities": []
+    },
+    {
+      "text": "What is the difference between precision advertising and programmatic?",
+      "intent": "answer_2",
+      "entities": []
+    },
+    {
+      "text": "What is precision advertising?",
+      "intent": "answer_1",
+      "entities": []
+    },
+    {
+      "text": "Can I track cookies on websites from my competitors?",
+      "intent": "answer_9",
+      "entities": []
+    },
+    {
+      "text": "What is Double Click?",
+      "intent": "answer_8",
+      "entities": []
+    },
+    {
+      "text": "Do I pay on the advertising platform when someone has an ad block?",
+      "intent": "answer_28",
+      "entities": []
+    },
+    {
+      "text": "Can I buy specific formats on precision advertising? Like homepage take over, expendables, rich media.",
+      "intent": "answer_29",
+      "entities": []
+    },
+    {
+      "text": "Can I track consumers across Facebook, Youtube and Google?",
+      "intent": "answer_26",
+      "entities": []
+    },
+    {
+      "text": "Can I cap frequency on traditional digital advertising?",
+      "intent": "answer_24",
+      "entities": []
+    },
+    {
+      "text": "Can I cap frequency across Facebook and Youtube?",
+      "intent": "answer_25",
+      "entities": []
+    },
+    {
+      "text": "How do I measure viewability?",
+      "intent": "answer_22",
+      "entities": []
+    },
+    {
+      "text": "How many times should a consumer see my ad?",
+      "intent": "answer_23",
+      "entities": []
+    },
+    {
+      "text": "How can I prevent my campaigns from being displayed to fake consumers?",
+      "intent": "answer_20",
+      "entities": []
+    },
+    {
+      "text": "Should we aim for 100% viewability?",
+      "intent": "answer_21",
+      "entities": []
+    }]
+  }
+}
