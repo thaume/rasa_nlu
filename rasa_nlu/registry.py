@@ -33,6 +33,8 @@ from rasa_nlu.tokenizers.whitespace_tokenizer import WhitespaceTokenizer
 from rasa_nlu.utils.mitie_utils import MitieNLP
 from rasa_nlu.utils.spacy_utils import SpacyNLP
 
+from rasa_nlu.classifiers.whys_classifier import WhysClassifier
+
 if typing.TYPE_CHECKING:
     from rasa_nlu.components import Component
     from rasa_nlu.config import RasaNLUConfig
@@ -45,6 +47,7 @@ component_classes = [
     SpacyFeaturizer, MitieFeaturizer, NGramFeaturizer, RegexFeaturizer,
     MitieTokenizer, SpacyTokenizer, WhitespaceTokenizer,
     SklearnIntentClassifier, MitieIntentClassifier, KeywordIntentClassifier,
+    WhysClassifier,
 ]
 
 # Mapping from a components name to its class to allow name based lookup.
@@ -83,6 +86,9 @@ registered_pipeline_templates = {
     "keyword": [
         "intent_classifier_keyword",
     ],
+    "whys": [
+        "whys_classifier",
+    ],
     # this template really is just for testing
     # every component should be in here so train-persist-load-use cycle can be tested
     # they still need to be in a useful order - hence we can not simply generate this automatically
@@ -104,6 +110,7 @@ registered_pipeline_templates = {
         "intent_classifier_keyword",
         "intent_classifier_sklearn",
         "intent_classifier_mitie",
+        "whys_classifier",
     ]
 }
 
@@ -116,7 +123,8 @@ def get_component_class(component_name):
         raise Exception("Failed to find component class for '{}'. Unknown component name. ".format(component_name) +
                         "Check your configured pipeline and make sure the mentioned component is not misspelled. " +
                         "If you are creating your own component, make sure it is listed as part of the " +
-                        "`component_classes` in `rasa_nlu.registry.py`.")
+                        "`component_classes` in `rasa_nlu.registry.py`.blbsdfds" +
+                        format(registered_components))
     return registered_components[component_name]
 
 
