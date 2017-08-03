@@ -76,7 +76,6 @@ class RasaNLUConfig(object):
 
         if isinstance(self.__dict__['pipeline'], six.string_types):
             from rasa_nlu import registry
-            print "hi"
             if self.__dict__['pipeline'] in registry.registered_pipeline_templates:
                 self.__dict__['pipeline'] = registry.registered_pipeline_templates[self.__dict__['pipeline']]
             else:

@@ -123,8 +123,7 @@ def get_component_class(component_name):
         raise Exception("Failed to find component class for '{}'. Unknown component name. ".format(component_name) +
                         "Check your configured pipeline and make sure the mentioned component is not misspelled. " +
                         "If you are creating your own component, make sure it is listed as part of the " +
-                        "`component_classes` in `rasa_nlu.registry.py`.blbsdfds" +
-                        format(registered_components))
+                        "`component_classes` in `rasa_nlu.registry.py`.")
     return registered_components[component_name]
 
 
