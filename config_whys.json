@@ -1,5 +1,5 @@
 {
-  "pipeline" : ["whys_classifier"],
+  "pipeline" : "whys",
   "path" : "./models",
   "log_level": "DEBUG",
   "data" : "./training_data/loreal.json"

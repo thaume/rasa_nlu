@@ -34,6 +34,7 @@ from rasa_nlu.utils.mitie_utils import MitieNLP
 from rasa_nlu.utils.spacy_utils import SpacyNLP
 
 from rasa_nlu.classifiers.whys_classifier import WhysClassifier
+from rasa_nlu.classifiers.tfidf_classifier import TFIDFClassifier
 
 if typing.TYPE_CHECKING:
     from rasa_nlu.components import Component
@@ -47,7 +48,7 @@ component_classes = [
     SpacyFeaturizer, MitieFeaturizer, NGramFeaturizer, RegexFeaturizer,
     MitieTokenizer, SpacyTokenizer, WhitespaceTokenizer,
     SklearnIntentClassifier, MitieIntentClassifier, KeywordIntentClassifier,
-    WhysClassifier,
+    WhysClassifier, TFIDFClassifier
 ]
 
 # Mapping from a components name to its class to allow name based lookup.
@@ -87,7 +88,7 @@ registered_pipeline_templates = {
         "intent_classifier_keyword",
     ],
     "whys": [
-        "whys_classifier",
+        "tfidf_classifier",
     ],
     # this template really is just for testing
     # every component should be in here so train-persist-load-use cycle can be tested
