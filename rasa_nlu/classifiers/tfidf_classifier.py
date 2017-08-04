@@ -233,7 +233,7 @@ class TFIDFClassifier(Component):
             top_n = 3
 
             process_input = [clean_str(string) for string in X] ####
-            process_input = np.array([self.questions_to_x(text) for text in process_input]) ####
+            process_input = np.array([self.questions_to_x(self.tfidf_extract(text, self.training_questions_list, threshold=self.TFIDF_THRESHOLD, textblob=False)) for text in process_input]) ####
             probas = self.model.predict(process_input, batch_size=1)
 
             dtype = [('id', int), ('proba', float)]
