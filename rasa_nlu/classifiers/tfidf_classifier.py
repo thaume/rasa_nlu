@@ -174,7 +174,11 @@ class TFIDFClassifier(Component):
             self.embeddings_weight_loading()
             y = self.labels_to_y(labels)
             self.training_questions_list = [self.clean_str(example.text) for example in training_data.intent_examples]
-            X = self.questions_to_x(self.tfidf_extract(self.training_questions_list,self.training_questions_list,threshold=self.TFIDF_THRESHOLD, textblob=False))
+            X = self.questions_to_x(
+                self.tfidf_extract(self.training_questions_list,
+                                   self.training_questions_list,
+                                   threshold=self.TFIDF_THRESHOLD,
+                                   textblob=False))
             X = np.array(X)
 
             embedding = Embedding(input_dim=self.weights.shape[0],
@@ -192,7 +196,11 @@ class TFIDFClassifier(Component):
 
             self.model = Model(inputs=inp, outputs=x)
 
-            adam = keras.optimizers.Adam(lr=0.0005, beta_1=0.9, beta_2=0.999, epsilon=1e-08, decay=0.0001)
+            adam = keras.optimizers.Adam(lr=0.0005,
+                                         beta_1=0.9,
+                                         beta_2=0.999,
+                                         epsilon=1e-08,
+                                         decay=0.0001)
             self.model.compile(loss='sparse_categorical_crossentropy',
                               optimizer=adam,
                               metrics=['accuracy'])
@@ -271,28 +279,28 @@ class TFIDFClassifier(Component):
 
     @classmethod
     def load(cls, model_dir=None, model_metadata=None, cached_component=None, **kwargs):
-        # type: (Text, Metadata, Optional[Component], **Any) -> SklearnIntentClassifier
+        # type: (Text, Metadata, Optional[Component], **Any) -> TFIDFClassifier
         import cloudpickle
 
-        if model_dir and model_metadata.get("whys_classifier"):
-            classifier_file = os.path.join(model_dir, model_metadata.get("whys_classifier"))
+        if model_dir and model_metadata.get("tfidf_classifier"):
+            classifier_file = os.path.join(model_dir, model_metadata.get("tfidf_classifier"))
             with io.open(classifier_file, 'rb') as f:  # pragma: no test
                 if PY3:
                     return cloudpickle.load(f, encoding="latin-1")
                 else:
                     return cloudpickle.load(f)
         else:
-            return SklearnIntentClassifier()
+            return TFIDFClassifier()
 
     def persist(self, model_dir):
         # type: (Text) -> Dict[Text, Any]
         """Persist this model into the passed directory. Returns the metadata necessary to load the model again."""
         import cloudpickle
 
-        classifier_file = os.path.join(model_dir, "whys_classifier.pkl")
+        classifier_file = os.path.join(model_dir, "tfidf_classifier.pkl")
         with io.open(classifier_file, 'wb') as f:
             cloudpickle.dump(self, f)
 
         return {
-            "whys_classifier": "whys_classifier.pkl"
+            "tfidf_classifier": "tfidf_classifier.pkl"
         }

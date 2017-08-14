@@ -1,0 +1,6 @@
+{
+  "pipeline": ["tfidf_classifier"],
+  "path" : "./models",
+  "data" : "./training_data/loreal.json",
+  "max_number_of_ngrams": 3
+}
