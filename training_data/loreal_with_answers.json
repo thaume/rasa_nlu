@@ -1,0 +1,600 @@
+{
+  "chitchat":{
+    "hi":[
+      "Hi.",
+      "Hello.",
+      "Howdy.",
+      "Hiya.",
+      "Hey.",
+      "Good morning.",
+      "Good afternoon.",
+      "Good evening.",
+      "Morning.",
+      "What's up?",
+      "Good day.",
+      "Yo.",
+      "Hello there."
+    ],
+    "how_are_you":[
+      "How's it going?",
+      "How are you?",
+      "How you doing?",
+      "What's going on?",
+      "How's it hanging?",
+      "What's happening?"
+    ],
+    "nice_to_meet_you":[
+      "Nice to meet you.",
+      "It's nice to meet you!",
+      "Very nice to meet you.",
+      "Pleasure to meet you.",
+      "It's a pleasure to meet you."
+    ],
+    "what_are_you":[
+      "What are you?",
+      "Are you a bot?",
+      "Are you a person?"
+    ],
+    "what_sex_are_you":[
+      "What sex are you?",
+      "Are you a male or female?",
+      "Are you male?",
+      "Are you female?",
+      "Are you a male?",
+      "Are you a female?",
+      "Are you a guy or girl?",
+      "Are you a guy or a girl?",
+      "Are you a guy?",
+      "Are you a girl?",
+      "Are you a man or woman?",
+      "Are you a man?",
+      "Are you a woman?"
+    ],
+    "whats_ur_favorite_color":[
+      "What's your favorite color?",
+      "What color do you like?",
+      "Can you tell me what is your favourite color?"
+    ],
+    "whats_ur_name":[
+      "Who are you?",
+      "What's your name?",
+      "What should I call you?",
+      "How should I address you?",
+      "What do you go by?"
+    ],
+    "where_are_you":[
+      "Where do you work?",
+      "Where is your work located?",
+      "What city are you working in?",
+      "What state are you working in?",
+      "What country are you working in?",
+      "Where is your office?"
+    ],
+    "what_is_ur_job":[
+      "What is your job?",
+      "What do you do for a living?",
+      "What is your occupation?",
+      "What do you do of your days?",
+      "Do you have a job?",
+      "Do you work?",
+      "How can you help me?",
+      "What are you here for?",
+      "What can you do for me?",
+      "Help me"
+    ],
+    "how_old_are_you":[
+      "How old are you?",
+      "Are you young?",
+      "Are you old?"
+    ],
+    "start_studying":[
+      "You need to start studying!",
+      "are you studying?",
+      "you need to study more",
+      "start studying!"
+    ],
+    "can_eat_cookie":[
+      "Can you eat this cookie ?",
+      "Eat this cookie",
+      "I want you to eat this cookie",
+      "Ingest this cookie"
+    ]
+  },
+  "faq_question":{
+    "answer_46": [
+      "where do you come from?",
+      "where are you from?",
+      "where do you live?",
+      "where are you living?"
+    ],
+    "answer_45": [
+      "how can I do tagging??",
+      "tell me how to do tagging",
+      "how am I supposed to do tagging?",
+      "show me how to do tagging",
+      "how can I use tagging?"
+    ],
+    "answer_44": [
+      "what Google Ad products do we have?",
+      "show me our google Ad products",
+      "do you have a list of the google Ad products we use?",
+      "what are the google ad products used by L'Oreal?",
+      "what is L'Oreal currently using regarding google Ad products?",
+      "what Google Ad products do we have activated?"
+    ],
+    "answer_43": [
+      "What is doubleclick?",
+      "Can you explain to me what is doubleclick?"
+    ],
+    "answer_42":[
+      "What are the latest news?",
+      "What is happening today?",
+      "How is the day looking like?",
+      "Do you have news for today ?",
+      "Tell me about today's news"
+    ],
+    "answer_41":[
+      "What is GAP?",
+      "Can you tell me about GAP?",
+      "Do we use GAP?",
+      "I want to know more about GAP"
+    ],
+    "answer_40":[
+      "Can you eat this cookie?",
+      "Is it possible for you to eat this cookie ?",
+      "Eat this cookie now !"
+    ],
+    "answer_39":[
+      "I want to know more about facebook ads",
+      "Can you tell me more about facebook ads ?",
+      "Explain facebook ads to me",
+      "What are facebook ads?"
+    ],
+    "answer_38":[
+      "Who is the precision ad expert in Spain?",
+      "Who should I talk to regarding precision ad in Spain?",
+      "Who is the contact in Spain for precision ad ?",
+      "Can you give me the contact of the precision ad expert in Spain ?"
+    ],
+    "answer_37":[
+      "what is RTB?"
+    ],
+    "answer_36":[
+      "what is audience center",
+      "can you tell me what is audience center?"
+    ],
+    "answer_35":[
+      "what are the tagging rules?",
+      "Are there golden rules for tagging ?",
+      "What are the golden rules of tagging?",
+      "what are the golden rules?",
+      "do we have golden rules for tagging?"
+    ],
+    "answer_34":[
+      "what is enhanced ecommerce in google analytics?"
+    ],
+    "answer_13":[
+      "How can I activate my precision advertising campaign?",
+      "How do I begin using precision advertising campaigns?",
+      "Is there a guide to activating campaigns on precision advertising?",
+      "When can I begin precision ad campaigns?",
+      "Are precision ad campaigns ready to go?",
+      "How do I start precision advertising?",
+      "Can I start a precision advertising campaign?",
+      "How can I get started with precision advertising?"
+    ],
+    "answer_12":[
+      "What is a healthy rate of precision advertising for my country?",
+      "Is there a local benchmark for precision advertising?",
+      "How do I know I'm using precision advertising enough for my country?",
+      "Do different countries have different rates for precision advertising?",
+      "Can I find a good rate for precision ads in my country?",
+      "What are good precision advertising rates for my region?",
+      "How much precision advertising do I need for my country?"
+    ],
+    "answer_11":[
+      "How do I know how many cookies I have?",
+      "Where can I find out the number of cookies used?",
+      "Can I count the number of cookies I have?",
+      "Is there a way to get the total number of cookies?",
+      "Where is there a report on the number of cookies?",
+      "How can I tell how many cookies I have?",
+      "What do I use to keep track of my cookies?"
+    ],
+    "answer_10":[
+      "What is the lifetime of a cookie?",
+      "How long do cookies last?",
+      "Do cookies need to be changed?",
+      "When do cookies stop working?",
+      "Are cookies able to last forever?",
+      "How long does a cookie last?",
+      "Will cookies stay alive forever?",
+      "Can a cookie ever disappear?"
+    ],
+    "answer_17":[
+      "What are the right KPIs for precision advertising?",
+      "What are the main metrics for precision advertising?",
+      "How does precision advertising measure success?",
+      "What do I use to track precision advertising results?",
+      "Is there an official measurement or KPI for precision ads?",
+      "Can you explain how we measure performance of our advertising?"
+    ],
+    "answer_16":[
+      "How can I get a cross device vision of my campaign?",
+      "How do I need how my campaign is working across devices?",
+      "Can I get an indicator of campaign success for multiple devices?",
+      "How do I measure campaigns across several devices?",
+      "Is there a cross device view of my campaign I can access?",
+      "How can I see my campaign results on my iphone?",
+      "How can I measure my campaign across different devices?",
+      "I want to track my campaign on all my devices, how do I do that?"
+    ],
+    "answer_15":[
+      "How can I target specific skin concerns?",
+      "Is it possible to target campaigns by skin problems?",
+      "Can I segment audiences by skin condition or issue?",
+      "How would I target particular skin concerns?",
+      "Are skin problems a way to filter?",
+      "I want to advertise to brown skinned individuals, is that possible?",
+      "How can I target specific skin conditions?"
+    ],
+    "answer_14":[
+      "How can I target blond, brunette, curly hair?",
+      "Is there a way to target people by hair type?",
+      "Can I filter audiences by red, brown, blonde or other hair?",
+      "Can I be as precise in campaigns as targeting hair?",
+      "Is it possible to segment by hair type, style or texture?",
+      "How can I target a specific hair color or style?",
+      "Can I advertise to specific hair types e.g. blond, brunette, etc.?",
+      "I want to advertise to curly haired brunettes, is that possible?",
+      "I want to target specific customers by hair type, how do I do that?",
+      "Can I market to specific hair colors or types?"
+    ],
+    "answer_19":[
+      "What is real time bidding?",
+      "How does real time bidding work?",
+      "Is there a way to bid in real time?",
+      "Can you explain what real time bidding is?",
+      "What does real time bidding mean?",
+      "Tell me about real-time bidding.",
+      "Explain bidding to me",
+      "How does real-time bidding work?"
+    ],
+    "answer_18":[
+      "What is ABC, 123?",
+      "What does ABC, 123 mean?",
+      "Can you explain ABC, 123 to me?",
+      "Is there a meaning to ABC, 123?",
+      "Does ABC, 123 mean anything?",
+      "Tell me about ABC 123"
+    ],
+    "answer_31":[
+      "What are the precision advertising golden rules?",
+      "What are the precision advertising's best practices?",
+      "Are there a set of rules to follow with precision advertising?",
+      "Can I get guidance on the best way to use precision advertising?",
+      "What are the main things to know about precision advertising?",
+      "What are precision advertising best practices?",
+      "Tell me about advertising best practices"
+    ],
+    "answer_30":[
+      "What are the first steps of precision advertising?",
+      "How do I get started with precision advertising?",
+      "How can I get going with precision advertising?",
+      "Can I begin using precision advertising?",
+      "Show me the first steps to start using precision advertsiing.",
+      "What should I do first with precision advertising?"
+    ],
+    "answer_33":[
+      "How does Double Click, Google analytics premium get invoiced to me?",
+      "How do I get charged for Double Click and Google Analytics premium?",
+      "Do I get billed for premium Google Analytics and Double Click?",
+      "Can you explain how invoices work for Double Click and GA premium accounts?",
+      "What is the billing system for premium Google Analytics and Double Click?"
+    ],
+    "answer_32":[
+      "How can I get access to Double Click?",
+      "Can someone open a Double Click account for me?",
+      "How do I get started with Double Click?",
+      "Is there a way to get going with Double Click?",
+      "What do I need to do to start using Double Click?",
+      "How do I access DoubleClick?"
+    ],
+    "answer_7":[
+      "What is a cookie?",
+      "Show me what cookies are.",
+      "What do cookies do?",
+      "How does a cookie work?",
+      "Where can I find a cookie?",
+      "Can you explain cookies to me?",
+      "What's the point of a cookie?",
+      "Why are cookies important?"
+    ],
+    "answer_6":[
+      "What is a tag?",
+      "What is tagging?",
+      "How do tags work?",
+      "What are tags for?",
+      "Explain tagging to me.",
+      "Show me what tags are.",
+      "What can you tell me about tags?",
+      "Tell me about tags.",
+      "Why are tags important?",
+      "Can you tell me about tags?"
+    ],
+    "answer_5":[
+      "Why don\u2019t we have a DMP?",
+      "Do we have a DMP?",
+      "What DMP do we use?",
+      "Do we have a platform to manage data?",
+      "How do we aggregate data from our various sources?",
+      "Where is data from digital campaigns stored?",
+      "Can we get a DMP?",
+      "How do we manager our data?"
+    ],
+    "answer_4":[
+      "What is DSP?",
+      "What is DoubleClick Bid Manager?",
+      "What is DBM?",
+      "What programmatic bidding tools do we use?",
+      "What does DSP mean?",
+      "Explain DSP to me"
+    ],
+    "answer_3":[
+      "What is a DMP?",
+      "What is a data management platform?",
+      "What does DMP mean?",
+      "What can you tell me about DPM?",
+      "Can you explain DPM to me?",
+      "Tell me about DPM please"
+    ],
+    "answer_2":[
+      "What is the difference between precision advertising and programmatic?",
+      "How would you compare precision advertising and programmatic ?",
+      "Is there a difference between precision advertising and programmatic ?",
+      "Are precision advertising and programmatic different ?",
+      "Can I use both programmatic and precision advertising ?"
+    ],
+    "answer_1":[
+      "What is precision advertising?",
+      "What is precission advertising?",
+      "What is precision ad?",
+      "Can you explain precison advertising to me ?",
+      "Do you have information regarding precision advertising ?",
+      "Define precision advertising"
+    ],
+    "answer_9":[
+      "Can I track cookies on websites from my competitors?",
+      "Can I get data from other websites' cookies?",
+      "Is it possible to get data on competitors through their cookies?",
+      "Can I track users on competitors' websites?",
+      "Is data collection from competitor websites possible?",
+      "Can I see who's visiting competitor websites?",
+      "Can I see competitors' cookies?"
+    ],
+    "answer_8":[
+      "What is Double Click?",
+      "Why do we use Double Click?",
+      "What does Double Click do?",
+      "Do I need to use Double Click?",
+      "What tool do we use for campaigns?",
+      "How do I activate data for campaigns?",
+      "Where do I go to buy ads?",
+      "How do we see peoples ad clicks?",
+      "What tools do we use to collect and analyze ad clicks?"
+    ],
+    "answer_28":[
+      "Do I pay on the advertising platform when someone has an ad block?",
+      "Do ad blockers effect my ROI and advertising costs?",
+      "Is there an expense when an ad is blocked by an ad blocker?",
+      "Can I avoid being charged on the ad platform for blocked ads?",
+      "Is there a way to avoid ad platform fees when ads are blocked?",
+      "How does adblock affect advertising rates?"
+    ],
+    "answer_29":[
+      "Can I buy specific formats on precision advertising? Like homepage take over, expendables, rich media.",
+      "Are specific formats like homepage take over, expendables and rich media available on precision advertising?",
+      "Does precision advertising allow buying particular formats like take over, expendables, rich media, etc.?",
+      "How do I purchase homepage take overs, expendables and rich media?",
+      "Where can I buy precise formats like rich media, homepage take overs and expendables?"
+    ],
+    "answer_26":[
+      "Can I track consumers across Facebook, Youtube and Google?",
+      "Is it possible to understand consumer behavior across Google, Facebook and YouTube?",
+      "How do I link behavior across the Facebook, YouTube or Google?",
+      "Is there a way to track consumers or users across different ad networks?",
+      "Explain how tracking consumers across social, video and search works.",
+      "How do I track consumers on YouTube and Google?"
+    ],
+    "answer_27":[
+      "WHY IS MY BOUNCE RATE 2 TIMES HIGHER THAN IN OTHER COUNTRIES?",
+      "Is there an explanation for why my bounce rate is higher in my country?",
+      "What is the reason my bounce rate is so high compared to other countries?",
+      "Is there a reason why my bounce rate is twice that in other countries?",
+      "Why is my bounce rate 200% higher than other place?"
+    ],
+    "answer_24":[
+      "Can I cap frequency on traditional digital advertising?",
+      "Is there a maximum display frequency for traditional digital advertising?",
+      "Do digital ads have a display frequency cap or limit?",
+      "Is there a cap on traditional digital advertizing frequency?",
+      "Should I set a limit on the frequency of digital advertizing?",
+      "Tell me about frequency caps on regular digital advertising."
+    ],
+    "answer_25":[
+      "Can I cap frequency across Facebook and Youtube?",
+      "Is there a way to limit display frequency on YouTube or Facebook?",
+      "How do I cap frequency across Facebook and YouTube?",
+      "Is there an optimal display frequency for Facebook and YouTube?",
+      "How do I control the frequency of ads on Facebook and YouTube?",
+      "Can you tell me about frequency caps on Facebook and YouTube?"
+    ],
+    "answer_22":[
+      "How do I measure viewability?",
+      "Is there a way to track viewability?",
+      "Where do I find the viewability indicator or metric?",
+      "Can I track or follow viewability rates?",
+      "Show me where I can find viewability.",
+      "Can I measure viewability?",
+      "How is viewability measured?"
+    ],
+    "answer_23":[
+      "How many times should a consumer see my ad?",
+      "Should my ad be shown a limited number of times to a consumer or user?",
+      "Is there a maximum number of times a consumer should see an ad?",
+      "Is there a limit to the number of times someone should view an ad?",
+      "Is there an optimal number of times a consumer should view my ad?",
+      "How often should customers see my ad?"
+    ],
+    "answer_20":[
+      "How can I prevent my campaigns from being displayed to fake consumers?",
+      "How can I reduce audience fraud in my campaigns?",
+      "Is there a way to filter out fake consumers or users in my audience?",
+      "Can I make sure my campaign is only shown to real people?",
+      "How do I avoid spending money on fake views?",
+      "How do I avoid fake consumers?",
+      "How can I avoid impressions with people who aren't real?",
+      "What do I have to do to screen fake users?"
+    ],
+    "answer_21":[
+      "Should we aim for 100% viewability?",
+      "What percentage of viewability is necessary?",
+      "Should we target a rate of 100% viewability?",
+      "Is there a target level for viewability?",
+      "Should I ensure 100% viewability for campaigns?",
+      "Can we get to 100% viewability?",
+      "Should we try to get total viewability?",
+      "What's a good target for viewability?"
+    ]
+  },
+  "GA_questions":{
+    "6efbe917-3a4a-466f-a671-c6f7e0af3f11": [
+      "How do I export my data from Google Analytics?",
+      "How can I download the data from Google Analytics?",
+      "Is it possible to get the data from Google Analytics?",
+      "Can I get the Google Analtyics data as CSV?",
+      "Can I get the Google Analtyics data as Excel?",
+      "Can I get the Google Analtyics data on my computer?",
+      "Can I get the Google Analtyics data?",
+      "Is it possible to download the Google analytics data?",
+      "Is the Google analytics data downloadable?"
+    ],
+    "daaf91ee-708d-4f94-bffd-29cd053a73a9": [
+      "What is user ID for Google Analytics??",
+      "Tell me what user ID means for Google Analytics?",
+      "Explain to me what user ID is for Google Analytics"
+    ],
+    "027225d8-4df4-48f1-95ac-b561a4aed31e":[
+      "How can I view Active Users data?"
+    ],
+    "0ed573eb-583a-424f-b9c8-43c377da4de0":[
+      "What is Universal Analytics?"
+    ],
+    "1483247e-ea04-4a77-b5d2-90ea78200622":[
+      "How can I merge data collected using 2 Tracking IDs in Google Analytics?"
+    ],
+    "1649634a-5dd2-43ba-922c-2acb81bf0c59":[
+      "Whatâ€™s the difference between page views and unique page views?"
+    ],
+    "17298039-4669-44d3-a155-178f51e9a9e3":[
+      "What is a channel grouping?"
+    ],
+    "1f935fcc-3d80-4184-8f44-5cd1ca8f4565":[
+      "Implementing Enhanced Ecommerce: How to Retrieve Product Data?"
+    ],
+    "2224272e-3bc0-4656-bb68-ae385920f0de":[
+      "What do site speed reports measure?"
+    ],
+    "26222323-ccbe-46c8-bed3-d467bc5e172a":[
+      "How do you do cohort analysis in Google Analytics?"
+    ],
+    "26a00169-dcae-48ea-910e-219bc39bcf80":[
+      "How to add a filter to a google analytics view?"
+    ],
+    "2cdc426a-78f2-4be8-bac8-ffdd3e5eef3c":[
+      "How do I create custom channel groupings?"
+    ],
+    "42b17f93-bc87-4f01-8413-a7358e9106f5":[
+      "Why arenâ€™t I seeing any results in Google Analytics Real Time?"
+    ],
+    "43d17240-88a4-466b-a099-038e24bfb05c":[
+      "How does Google Analytics Real Time work?"
+    ],
+    "501e44b1-7d32-4536-8513-b3925673a395":[
+      "Is it possible to exclude certain IPs or devices from a view?",
+      "How do I filter out a device or IP address from a view?"
+    ],
+    "588744d7-5555-4566-a297-41442eca2f00":[
+      "How do I delete a property from Google Analytics?"
+    ],
+    "5b668a39-baea-4dc8-b929-a71a7fbe9652":[
+      "Does Google Analytics support real time reporting for custom dimensions?"
+    ],
+    "5bdbbe07-a3c5-4811-83c1-22b430adacb5":[
+      "How do I verify that my Google Analytics filter is working?"
+    ],
+    "5d85942c-a21f-4138-b62e-a6971c17b342":[
+      "What reports are avaialble with Google Analytics Enhanced Ecommerce?"
+    ],
+    "5f2e7aea-c7f3-4c15-a616-02ff2b9a73df":[
+      "What is Google Analytics Enhanced Ecommerce?"
+    ],
+    "5f5bda80-ccc9-4211-a830-21806bb18bdc":[
+      "How can I view session durations for reached goals?"
+    ],
+    "5fea8288-e4b7-4192-b9ae-705ceca57cf8":[
+      "How to view the city/state/country in google analytice ecommerce tracking?"
+    ],
+    "6e31971d-246d-4709-804f-432620ec3f9d":[
+      "Why should I use google tag manager?"
+    ],
+    "8207c768-c818-409b-839a-c69763412497":[
+      "Can I export data from Google Analytics Behaviour Flow?"
+    ],
+    "85baf0e9-9062-4444-aa5c-c3ea52110010":[
+      "How can I track subdomains with Google Analytics?"
+    ],
+    "baec0d66-bb42-4bdc-8e8d-d28d8f70c2e1":[
+      "How can I track campaign information using Google Analytics?",
+      "Can I use Google Analytics to track certain pages?",
+      "Is it possible to track individual visitors in Wordpress and Google Analytics?"
+    ],
+    "c0a8e52a-8ec2-45f3-a6ec-00d932c858f7":[
+      "Should I link Adwords to Analytics profiles?",
+      "Can I detect visitor adwords keyword with google adwords and analytics?"
+    ],
+    "cd0728ea-d152-4079-9d54-ace124dbb3f1":[
+      "How can I manage users in Google Analytics?"
+    ],
+    "d1c3504d-be2a-4b0a-8ede-643a332d2bef":[
+      "How do I create a segment?"
+    ],
+    "d288b202-bfd8-43ad-81e0-30ac1fdd2c92":[
+      "Can I add custom dimensions and metrics to Google Analytics?"
+    ],
+    "d439aa02-563f-45c8-9cbf-563059d1016f":[
+      "How can I find my tracking id in Google Analytics?",
+      "What is my tracking ID?",
+      "Where can I find my tracking ID or property number?"
+    ],
+    "de0479ab-3b5e-4c04-8777-deb8c75db868":[
+      "What is cross domain tracking?"
+    ],
+    "e0a5c2b6-dc37-4228-b5d8-edb2b9d67ff8":[
+      "Is there a Google Analytics for mobile apps?",
+      "How to use google analytics with mobile apps?"
+    ],
+    "e2b1abba-cf98-46f0-bb1a-0f5a57ef221f":[
+      "What is a view?"
+    ],
+    "e3c9be11-d588-4a6b-92c1-e5b8782406fd":[
+      "How can I enable demographics and interests reports?"
+    ],
+    "e7bef595-3887-48ad-b060-fa08e10da70a":[
+      "What is sampling?"
+    ],
+    "f7b13790-e2ab-4a70-8c96-6b4a0a3543bd":[
+      "How can I setup Enhanced Ecommerce for a view?"
+    ]
+  }
+}

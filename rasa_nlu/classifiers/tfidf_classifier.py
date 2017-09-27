@@ -43,7 +43,11 @@ class TFIDFClassifier(Component):
             self.le = le
         else:
             self.le = LabelEncoder()
+
         self.model = model
+
+        if model:
+            model._make_predict_function()
 
     @classmethod
     def required_packages(cls):
@@ -81,6 +85,48 @@ class TFIDFClassifier(Component):
     def n_containing(self, word, bloblist):
         return sum(1 for blob in bloblist if word in blob)
 
+    def build_tfidf_map(self):
+        import json
+        import numpy as np
+
+        # manual load of training data
+        with open('training_data/loreal_with_answers.json') as json_data:
+            training_questions = json.load(json_data)
+
+        questions = []
+        questions_raw = []
+        questions_mask = []
+        answers = []
+        pred_link = []
+        answer_link = []
+        tfidf_questions = []
+        tfidf_answers = []
+        for i, answer in enumerate(training_questions["faq_question"]):
+            temp = []
+            temp2 = []
+            temp_string = ""
+            answers.append([i for j in training_questions["faq_question"][answer]])
+            #tfidf_answers.append(i)
+            tfidf_answers.append([i for j in training_questions["faq_question"][answer]])
+            pred_link.append(training_questions["faq_question"][answer][0])
+            for question in training_questions["faq_question"][answer]:
+                questions_mask.append(i)
+                temp.append(self.clean_str(question))
+                temp2.append(question)
+                temp_string += " " + self.clean_str(question)
+                answer_link.append(answer)
+                tfidf_questions.append(tb(self.clean_str(question)))
+            questions.append(temp)
+            questions_raw.append(temp2)
+            #tfidf_questions.append(tb(temp_string))
+
+        answers = np.concatenate(answers)
+        questions = np.concatenate(questions)
+        questions_raw = np.concatenate(questions_raw)
+        tfidf_answers = np.concatenate(tfidf_answers)
+
+        return tfidf_questions
+
     # computes "inverse document frequency" which measures how common a word is among all documents in bloblist
     def idf(self, word, bloblist):
         return math.log(len(bloblist) / (float)(1 + self.n_containing(word, bloblist)))
@@ -89,22 +135,24 @@ class TFIDFClassifier(Component):
     def tfidf(self, word, blob, bloblist):
         return self.tf(word, blob) * self.idf(word, bloblist)
 
-    def tfidf_extract(self, questions_list, training_questions_list, threshold = 0.20, textblob=False):
-        tfidf_extracted = []
+    def tfidf_extract(self, questions_list, tfidf_threshold=0.10, textblob=False):
+        tfidf_extract = []
+        tfidf_questions = self.build_tfidf_map()
+
         for i, blob in enumerate(questions_list):
             print("Top words in document {}".format(i))
             if textblob:
-                scores = {word: self.tfidf(word, blob, training_questions_list) for word in blob.words}
+                scores = {word: self.tfidf(word, blob, tfidf_questions) for word in blob.words}
             else:
-                scores = {word: self.tfidf(word, tb(blob), training_questions_list) for word in tb(blob).words}
+                scores = {word: self.tfidf(word, tb(blob), tfidf_questions) for word in tb(blob).words}
             sorted_words = sorted(scores.items(), key=lambda x: x[1], reverse=True)
             document_top = []
             for word, score in sorted_words[:5]:
                 print("\tWord: {}, TF-IDF: {}".format(word, round(score, 5)))
-                if score > threshold and word not in document_top:
+                if score > tfidf_threshold and word not in document_top:
                     document_top.append(word)
-            tfidf_extracted.append(' '.join(document_top))
-        return tfidf_extracted
+            tfidf_extract.append(' '.join(document_top))
+        return tfidf_extract
 
     def embeddings_weight_loading(self):
         import os
@@ -167,17 +215,18 @@ class TFIDFClassifier(Component):
 
         labels = [e.get("intent") for e in training_data.intent_examples]
 
+        self.embeddings_weight_loading()
+
         if len(set(labels)) < 2:
             logger.warn("Can not train an intent classifier. Need at least 2 different classes. " +
                         "Skipping training of intent classifier.")
         else:
-            self.embeddings_weight_loading()
+            # self.embeddings_weight_loading()
             y = self.labels_to_y(labels)
             self.training_questions_list = [self.clean_str(example.text) for example in training_data.intent_examples]
             X = self.questions_to_x(
                 self.tfidf_extract(self.training_questions_list,
-                                   self.training_questions_list,
-                                   threshold=self.TFIDF_THRESHOLD,
+                                   tfidf_threshold=self.TFIDF_THRESHOLD,
                                    textblob=False))
             X = np.array(X)
 
@@ -188,6 +237,8 @@ class TFIDFClassifier(Component):
 
             inp = Input(shape=(self.MAX_DOC_LENGTH,))
             emb_seq = embedding(inp)
+
+            print("Start training")
 
             d = Dense(64, activation='relu')(emb_seq)
             d = Flatten()(d)
@@ -204,6 +255,8 @@ class TFIDFClassifier(Component):
             self.model.compile(loss='sparse_categorical_crossentropy',
                               optimizer=adam,
                               metrics=['accuracy'])
+
+            print(model.summary())
 
             tensorboard = keras.callbacks.TensorBoard(log_dir='./logs_tensorflow',
                                                      histogram_freq=1,
@@ -226,6 +279,9 @@ class TFIDFClassifier(Component):
     def process(self, message, **kwargs):
         # type: (Message, **Any) -> None
         """Returns the most likely intent and its probability for the input text."""
+        import numpy as np
+
+        self.embeddings_weight_loading()
 
         if not self.model:
             # component is either not trained or didn't receive enough training data
@@ -233,35 +289,58 @@ class TFIDFClassifier(Component):
             intent_ranking = []
         else:
             print(message.text)
-            X = message.text.reshape(1, -1)
+            X = [message.text]
             print(X)
-
-            self.embeddings_weight_loading()
 
             top_n = 3
 
-            process_input = [clean_str(string) for string in X] ####
-            process_input = np.array([self.questions_to_x(self.tfidf_extract(text, self.training_questions_list, threshold=self.TFIDF_THRESHOLD, textblob=False)) for text in process_input]) ####
-            probas = self.model.predict(process_input, batch_size=1)
+            process_input = [self.clean_str(string) for string in X]
+            process_input = np.array([self.questions_to_x(
+                self.tfidf_extract(
+                    [text],
+                    tfidf_threshold=self.TFIDF_THRESHOLD,
+                    textblob=False
+                )
+            ) for text in process_input])
 
-            dtype = [('id', int), ('proba', float)]
+            probas = self.model.predict(process_input[0], batch_size=1)
+
+            ndtype = np.dtype([
+                ("id".encode("ascii"), np.int, 1),
+                ("proba".encode("ascii"), np.float64, 1)
+            ])
+
             for i1, proba in enumerate(probas):
-                proba = np.sort(np.array([(idQ, proba[idQ]) for idQ in range(len(proba))], dtype=dtype), order='proba')
+                proba = np.sort(
+                    np.array(
+                        [(idQ, proba[idQ]) for idQ in range(len(proba))],
+                        ndtype
+                    ),
+                    order="proba".encode("ascii")
+                )
+
                 first_ones = proba[-top_n:]
                 first_ones = first_ones[::-1] # order the list
 
                 print("\nQ:\t", X[i1], "\n")
                 #for i, guess in enumerate(first_ones, start=1):
                 #    print "\t", guess[1]*100, "%", "\t\t", pred_link[guess[0]]
-                intent = {"name": first_ones[0][0], "confidence": first_ones[0][1]}
-                intent_ranking = [{"name": guess[0], "confidence": guess[1]} for guess in first_ones]
+                intent = {
+                    "name": first_ones[0][0],
+                    "confidence": first_ones[0][1]
+                }
+                intent_ranking = [{
+                    "name": guess[0],
+                    "confidence": guess[1]
+                } for guess in first_ones]
 
                 message.set("intent", intent, add_to_output=True)
                 message.set("intent_ranking", intent_ranking, add_to_output=True)
 
     def predict_prob(self, X):
         # type: (np.ndarray) -> np.ndarray
-        """Given a bow vector of an input text, predict the intent label. Returns probabilities for all labels.
+        """Given a bow vector of an input text, predict the intent label.
+        Returns probabilities for all labels.
 
         :param X: bow of input text
         :return: vector of probabilities containing one entry for each label"""
@@ -270,10 +349,12 @@ class TFIDFClassifier(Component):
 
     def predict(self, X):
         # type: (np.ndarray) -> Tuple[np.ndarray, np.ndarray]
-        """Given a bow vector of an input text, predict most probable label. Returns only the most likely label.
+        """Given a bow vector of an input text, predict most probable label.
+        Returns only the most likely label.
 
         :param X: bow of input text
-        :return: tuple of first, the most probable label and second, its probability"""
+        :return: tuple of first, the most probable label and second, its
+        probability"""
 
         return [0]
 
@@ -281,26 +362,39 @@ class TFIDFClassifier(Component):
     def load(cls, model_dir=None, model_metadata=None, cached_component=None, **kwargs):
         # type: (Text, Metadata, Optional[Component], **Any) -> TFIDFClassifier
         import cloudpickle
+        from keras.models import model_from_json
 
         if model_dir and model_metadata.get("tfidf_classifier"):
-            classifier_file = os.path.join(model_dir, model_metadata.get("tfidf_classifier"))
-            with io.open(classifier_file, 'rb') as f:  # pragma: no test
-                if PY3:
-                    return cloudpickle.load(f, encoding="latin-1")
-                else:
-                    return cloudpickle.load(f)
+            meta = model_metadata.get("tfidf_classifier")
+
+            # load json and create model
+            with io.open(os.path.join(model_dir, meta["model_file"]), 'r') as f:
+                loaded_model_json = f.read()
+            loaded_model = model_from_json(loaded_model_json)
+            loaded_model.load_weights(os.path.join(model_dir, meta["weights_file"]))
+
+            return TFIDFClassifier(model=loaded_model)
+
         else:
             return TFIDFClassifier()
 
     def persist(self, model_dir):
         # type: (Text) -> Dict[Text, Any]
-        """Persist this model into the passed directory. Returns the metadata necessary to load the model again."""
+        """Persist this model into the passed directory. Returns the metadata
+        necessary to load the model again."""
         import cloudpickle
 
-        classifier_file = os.path.join(model_dir, "tfidf_classifier.pkl")
-        with io.open(classifier_file, 'wb') as f:
-            cloudpickle.dump(self, f)
+        model_file = os.path.join(model_dir, "tfidf_classifier_model.json")
+        model_weight_file= os.path.join(model_dir, "tfidf_classifier_weights.h5")
 
-        return {
-            "tfidf_classifier": "tfidf_classifier.pkl"
-        }
+        # serialize model to JSON
+        model_json = self.model.to_json()
+        with open(model_file, "w") as json_file:
+            json_file.write(model_json)
+
+        # serialize weights to HDF5
+        self.model.save_weights(model_weight_file)
+
+        return {"tfidf_classifier": {"model_file": "tfidf_classifier_model.json",
+                                     "weights_file": "tfidf_classifier_weights.h5",
+                                     "version": 1}}
