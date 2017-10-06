@@ -382,7 +382,6 @@ class TFIDFClassifier(Component):
         # type: (Text) -> Dict[Text, Any]
         """Persist this model into the passed directory. Returns the metadata
         necessary to load the model again."""
-        import cloudpickle
 
         model_file = os.path.join(model_dir, "tfidf_classifier_model.json")
         model_weight_file= os.path.join(model_dir, "tfidf_classifier_weights.h5")
